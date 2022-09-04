@@ -13,7 +13,14 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
   /* выше установили ограничения для секции */
+}
+
+.logo_place_header {
+position: absolute;
+top: 30px;
+left: 40;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
