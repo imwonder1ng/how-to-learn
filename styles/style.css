@@ -1,16 +1,8 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-p {
-  margin: 0;
 }
 
 .header {
@@ -22,21 +14,34 @@ p {
   display: flex;
   margin: 0;
   text-align: center;
-  color: #000000;
-  /* выше установили ограничения для секции */
+  z-index: 1;  
+}
+
+.logo {
+  background-image: url(../images/logo_place_header.svg);
+  width: 228px;
+  height: 32px;  
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
 }
 
 .header__title {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 102px;
   line-height: 96px;
   margin: 0;
-  width: 730px;
-  left: 64px;
-  top: 30%;
+  max-width: 730px;
+  width: 100%;
+  margin-left: 64px; 
 }
 
 .header__subtitle {
@@ -53,21 +58,11 @@ p {
   text-align: left;
 }
 
-.header__subtitle-link {
+.header__link {
   color: #2f80ed;
   text-decoration: none;
 }
 
-.logo_place_header {
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  width: 228px;
-  height: 32px;
-}
-
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   position: absolute;
   right: 0px;
@@ -75,7 +70,7 @@ p {
   background-color: #2f80ed;
   height: 568px;
   width: 568px;
-  z-index: 1;
+  z-index: -2;
 }
 
 .header__main-illustration {
@@ -85,7 +80,7 @@ p {
   width: 765px;
   height: 608px;
   align-items: flex-end;
-  z-index: 3;
+  z-index: -1;
 }
 
 .content {
@@ -93,14 +88,15 @@ p {
 }
 
 .description {
+  margin: 0;
   padding-top: 100px;
   display: flex;
   justify-content: center;
 }
 
 .two-columns {
-  margin: 100px;
   min-width: 784px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
@@ -114,12 +110,9 @@ p {
 }
 
 .two-columns__brief {
-  /* margin-bottom: 100px;
-  margin-top: 0px; */
+  margin-top: 0px; 
   margin: 0;
   width: 175px;
-  /* display: flex;
-  flex-direction: column; */
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -137,15 +130,14 @@ p {
 
 .two-columns__paragraph:last-child {
   margin: 0;
-
 }
 
-.two-columns__paragraph-bold {
+.two-columns__span-accent {
   font-weight: 600;
 }
 
 .digits {
-  padding-top: 100px;
+  margin-top: 100px;
   padding-bottom: 100px;
   margin: 0;
   display: flex;
@@ -161,7 +153,7 @@ p {
   justify-content: center;
   align-self: center;
   align-items: center;
-  width: 60%;
+  max-width: 60%;
   margin: 0;
   padding-top: 100px;
   padding-bottom: 20px;
@@ -176,13 +168,14 @@ p {
   margin: 0;
   text-align: center;
   padding-bottom: 60px;
-  width: 60%;
+  max-width: 60%;
+  width: 100%;
 }
 
 
 .table {
   width: 1100px;
-  margin: auto;
+  margin: 0 auto 0 auto;
   padding-bottom: 100px;
   list-style: none;
   display: flex;
@@ -191,31 +184,28 @@ p {
 }
 
 .table__cell {
-  margin: 0px;
+  margin: 60px 0 0;
   width: 250px;
   padding-bottom: 60px;
 }
 
-.bank {
-  padding-top: 20px;
-}
-
 .table__heading {
   margin: 0px;
+  padding-bottom: 20px;
+  line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
-  line-height: 1.15;
 }
 
 .table__text {
-  margin: 0;
-  padding-bottom: 20px;
+  margin: 20px 0 0 0;
   line-height: 1.2;
-  font-style: 18px;
+  font-size: 18px;
   font-weight: normal;
 }
 
 .feynman {
+  box-sizing: border-box;
   padding-top: 100px;
   margin: 0;
   min-height: 890px;
@@ -234,17 +224,18 @@ p {
   color: #000000;
   text-align: center;
   display: flex;
-  margin: 100px auto 0;
+  margin: 0;
   max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
+  padding-bottom: 70px;
 }
 
 .feynman__subtitle {
   color: #000000;
   display: flex;
-  margin: 100px auto 0;
+  margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -259,7 +250,6 @@ p {
   font-size: 36px;
   font-weight: normal;
   justify-content: flex-end;
-  padding-right: 48px;
   color: #2f80ed;
 }
 
@@ -272,15 +262,14 @@ p {
   align-items: center;
   background-color: #1f1f1f;
   color: white;
-  list-style: none;
   overflow: hidden;
-  z-index: 0;
+  z-index: 1;
+  padding-bottom: 90px;
 }
 
 
-.table__theme_dark {
+.table_theme_dark {
   position: relative;
-  list-style: none;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
@@ -289,6 +278,7 @@ p {
   flex-wrap: wrap;
   min-width: 1100px;
   padding-bottom: 90px;
+  padding-left: 0;
 }
 
 .section-title_theme_dark {
@@ -308,7 +298,6 @@ p {
 .section-subtitle_theme_dark {
   margin: 0;
   padding-bottom: 80px;
-  padding-top: 20px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -323,47 +312,40 @@ p {
   font-weight: 600;
 }
 
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
-  padding-bottom: 80px;
+  margin: 80px 0 0;
 }
 
 .table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
   position: absolute;
   top: 0;
   right: -210px;
   z-index: -1;
-
-
 }
-
 
 .footer {
 
-  min-height: 350;
+  min-height: 350px;
   min-width: 90%;
   background-color: #1f1f1f;
   margin: 0;
   color: white;
-  flex-basis: 711px;
   justify-content: center;
-  padding: 60 0 40 0px;
+  padding: 60px auto 40px auto;
 }
 
 .footer__author {
-  display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 18px 0 18px;
@@ -371,12 +353,13 @@ p {
   font-size: 18px;
   font-weight: normal;
   color: white;
-
 }
 
 .footer__columns {
+  flex-basis: 711px;
   width: 90%;
   padding-top: 60px;
+  padding-bottom: 40px;
   margin: 0 auto 0 auto;
   display: flex;
   flex-direction: row;
@@ -394,7 +377,6 @@ p {
 
 .logo_place_footer {
   align-items: flex-start;
-  display: flex;
   height: 32px;
   width: 228px;
   color: white;
@@ -408,6 +390,7 @@ p {
 }
 
 .footer__column-links {
+  margin: 0;
   text-align: left;
   padding-left: 0;
   text-decoration: none;
@@ -434,5 +417,6 @@ p {
 
 .footer__social-icon {
   padding-right: 10px;
-
+  width: 16px;
+  height: 16px;
 }
