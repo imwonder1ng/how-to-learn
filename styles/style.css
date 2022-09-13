@@ -24,7 +24,6 @@
 }
 
 .logo__img {
-  background-image: url(../images/logo_place_header.svg);
   width: 228px;
   height: 32px;  
 }
@@ -191,7 +190,6 @@
 
 .table__heading {
   margin: 0px;
-  padding-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -228,6 +226,7 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
+  padding-top: 100px;
   padding-bottom: 70px;
 }
 
@@ -304,7 +303,6 @@
 
 .table__heading_theme_dark {
   margin: 0;
-  padding-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -338,15 +336,16 @@
   min-width: 90%;
   background-color: #1f1f1f;
   margin: 0;
+  display: flex;
   color: white;
   position: relative;
-  justify-content: center;
 }
 
 .footer__author {
   margin: 18px 0;
-  flex-direction: row;
-  text-align: left;
+  flex-direction: column;
+  text-align: end;
+  align-items: flex-end;
   justify-content: space-around;
   line-height: 25px;
   font-size: 18px;
@@ -355,7 +354,6 @@
 }
 
 .footer__columns {
-  flex-basis: 711px;
   width: 90%;
   padding-top: 60px;
   padding-bottom: 40px;
