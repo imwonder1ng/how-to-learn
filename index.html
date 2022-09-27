@@ -4,11 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css"> 
+  <link rel="stylesheet" href="./vendor/normalize.css"> 
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/style.css">
 </head>
-
 <body>
   <div class="page">
     <header class="header">
@@ -16,7 +15,7 @@
         <img class="logo__img" src="./images/logo_place_header.svg" alt="логотип"></a>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать
-        в своей жизни? <a href="#" class="header__link">Узнать &#x2192;</a></p>
+        в своей жизни? <a href="#" class="header__link link">Узнать &#x2192;</a></p>
       <img class="header__main-illustration" src="./images/header-image.png" alt="опять двойка">
       <div class="header__square-pic rotation"></div>
     </header>
@@ -111,7 +110,7 @@
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a href="#" class="feynman__link">Подробнее &#x2192;</a>
+        <a href="#" class="feynman__link link">Подробнее &#x2192;</a>
       </section>
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
@@ -165,7 +164,7 @@
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="images/khan-book.jpg" alt="book">
-            <a href="#" class="khan__buy-link">Купить книгу &#x2192;</a>
+            <a href="#" class="khan__buy-link link">Купить книгу &#x2192;</a>
           </div>
         </div>
       </section>
@@ -221,10 +220,10 @@
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
         <ul class="resources__logo-zone">
-          <li><a href="#" target="_blank"><img class="recources__link" src="/images/logo/resources-arzamas.svg"></a></li>
-          <li><a href="#" target="_blank"><img class="recources__link" src="/images/logo/resources-n1.svg"></a></li>
-          <li><a href="#" target="_blank"><img class="recources__link" src="/images/logo/resources-strelka.svg"></a></li>
-          <li><a href="#" target="_blank"><img class="recources__link" src="/images/logo/resources-polka.svg"></a></li>
+          <li><a class="recources__link link" href="#" target="_blank"><img src="/images/logo/resources-arzamas.svg" alt="Arzamas"></a></li>
+          <li><a class="recources__link link" href="#" target="_blank"><img src="/images/logo/resources-n1.svg" alt="N+1"></a></li>
+          <li><a class="recources__link link" href="#" target="_blank"><img src="/images/logo/resources-strelka.svg" alt="Strelka"></a></li>
+          <li><a class="recources__link link" href="#" target="_blank"><img src="/images/logo/resources-polka.svg" alt="Polka"></a></li>
         </ul>
       </section>
     </main>
@@ -242,14 +241,14 @@
             <li><a class="footer__column-link" href="#">Наставники</a></li>
           </ul>
         </nav>
-        <nav class="footer__column footer__column">
+        <nav class="footer__column footer__column_content_social">
           <h6 class="footer__column-heading">Соцсети</h6>
           <ul class="footer__column-links">
-            <li><a href="#" target="_blank" class="footer__column-link"><img class="footer__social-icon"
+            <li><a href="#" target="_blank" class="footer__column-link link"><img class="footer__social-icon"
                   src="./images/facebook_color_white.svg" alt="ФБ">Facebook</a></li>
-            <li><a href="#" target="_blank" class="footer__column-link"><img class="footer__social-icon"
+            <li><a href="#" target="_blank" class="footer__column-link link"><img class="footer__social-icon"
                   src="./images/vk_color_white.svg" alt="ВК">ВКонтакте</a></li>
-            <li><a href="#" target="_blank" class="footer__column-link"><img class="footer__social-icon"
+            <li><a href="#" target="_blank" class="footer__column-link link"><img class="footer__social-icon"
                   src="./images/instagram_color_white.svg" alt="Инстаграм">Instagram</a></li>
           </ul>
         </nav>
