@@ -5,9 +5,9 @@
     border: none;
     display: inline-flex;
     justify-content: space-between;
-    }
+}
 
 
 .video__iframe:last-child {
     margin-left: 0px;
-    }
+}
